@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HTML Page</title>
+<style>
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background: #ff5a5f;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  input {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #10d010;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  input:hover {
+    background: #fff;
+    color: #000;
+  }
+</style>
+</head>
+<body>
+<h1>Welcome to Flask!</h1>
+<form action="{{ url_for('register') }}">
+  <input type="submit" value="Register" />
+</form>
+</body>
+</html>
